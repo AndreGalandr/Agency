@@ -1,0 +1,551 @@
+@font-face {
+  font-family: "Ubuntu-Light"; /* Имя шрифта */
+  src: url(fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu"; /* Имя шрифта */
+  src: url(fonts/Ubuntu-Regular.ttf); /*Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium"; /* Имя шрифта */
+  src: url(fonts/Ubuntu-Medium.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: Ubuntu;
+  font-size: 14px;
+}
+
+/* Общие стили */
+
+.mid {
+  width: 980px;
+  margin: 0 auto;  
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #444;
+	font-family: Ubuntu-light;
+	font-size: 42px;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:hover {
+	background: #00A3C9;
+	box-shadow: inset 0 0 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03);
+	cursor: pointer; 
+}
+
+.bt_c {
+	text-align: center;	
+}
+.tmpl {
+	position: absolute;
+	top: 50px;
+	left: 25px;
+	color: #000;
+}
+
+.tmpl:hover {
+	color: #00A3C9;
+	text-decoration: underline;
+}
+/* Styles for header */
+
+.bg_bar {
+  background-color: #fcfcfc;
+  background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.16);
+  height: 77px;
+}
+
+.logo {
+  padding-top: 15px;
+  float: left;
+  cursor: pointer;
+}
+
+.main-menu ul{
+  float: left;
+  text-align: center;
+  padding: 0 0 16px 60px;
+  margin: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	width: 100px;
+	height: 77px;
+}
+
+.main-menu li a {
+  color: #202020;
+  font-size: 15px;
+  font-family: "Ubuntu-Medium";
+}
+
+.main-menu li:hover {
+  background-color: rgba(0, 172, 204, 0.17); /* Цвет фона под ссылкой */ 
+  box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03); 
+} 
+
+.menu-span {
+  color: #444;
+  font-size: 12px;
+  font-family: "Ubuntu-Light";
+  line-height: 18px;
+}
+
+// .active {
+//   width: 99px;
+//   height: 77px;
+//   background-color: rgba(255, 255, 255, 0.5);
+//   background-image: linear-gradient(to bottom, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+//   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+//   border: 0.5px;
+// }
+
+.drops {
+  width: 85px;
+  height: 77px;
+  background-color: rgba(0, 172, 204, 0.17);
+  box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03);   
+}
+
+.magnifier {
+  float: right;
+  margin-top: 20px;
+  background-color: white;
+  background-image: linear-gradient(to top, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.04);
+}
+
+.mag_f {
+  padding-left: 20px; 
+  height: 34px; 
+  font-size: 13px; 
+  border: 1px solid #cfcfcf;
+}
+
+.mag_i {
+  float: right;
+}
+
+/* Стили для слайдера */
+
+.slider {
+ background: url(images/city_bg.png)  no-repeat 50% 0;
+}
+
+.slids {
+ width: 980px;
+ height: 500px;
+ background-color: rgba(0, 172, 204, 0.53);
+ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, transparent 100%);
+ box-shadow: 0 1px 0 white, inset 0 4px 0 rgba(0, 0, 0, 0.08), inset 0 0 0 rgba(0, 0, 0, 0.08);
+ margin: 20px auto;
+ text-align: center;
+}
+
+.love {
+	width: 650px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.m_detail {
+ width: 180px;
+ background-color: #00accc;
+ border-radius: 3px;
+ border: none;
+ outline: none;
+ text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+ color: white;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 48px;
+ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0 rgba(0, 0, 0, 0.13);
+ padding: 0px 0px 0px 20px;
+}
+
+.m_details {
+ padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+ height: 34px; /*высота строки ввода*/   
+ font-size: 13px; /*размер шрифта*/
+ border: 1px solid #cfcfcf;
+ width: 48px;
+ height: 48px;
+ background-color: rgba(0, 0, 0, 0.25);
+ box-shadow: -1px 0 0 rgba(255, 255, 255, 0.06), inset 1px 0 0 rgba(0, 0, 0, 0.08);
+}
+
+.m_arrow {
+	float: right;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+
+/* Стили для Latest News from Blog */
+
+.blog {
+	padding-bottom: 10px;	
+}
+
+.phone {
+	width: 300px;
+	height: 336px;
+	background-color: white;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+	float: left;
+	text-align: center;
+	margin: 0 20px 20px;
+}
+
+.phone h3, .latest_f h3 {
+	color: #444;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 18px;
+	margin-top: 15px;	
+}
+
+.phone p, .latest_f p{
+	/* padding: 5px; */
+	color: #8c8c8c;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.phone:nth-child(1), .latest_f:nth-child(1) {
+	margin-left: 0;
+}
+
+.phone:nth-child(3), .latest_f:nth-child(3) {
+	margin-right: 0;
+}
+
+/* Стили для Latest Features */
+
+.feat_l {
+	padding: 20px 0 0;	
+}
+
+.features {
+	height: 336px;
+	background-color: white;
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 0 0 rgba(0, 0, 0, 0.04);
+}
+
+.latest_f {
+	width: 300px;
+	float: left;
+	margin: 0 10px 20px;
+}
+
+.border {
+	border-right: 1px solid #e5e5e5;
+	height: 116px;
+	padding-left: 19px;
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.latest_f .latest_img{
+	float: left;
+	height: 200px;
+	width: 60px;
+	margin-right: 20px;
+}
+
+.latest_p h3 {
+	margin-top: 0;
+}
+
+.read_m {
+	width: 86px;
+	height: 28px;
+	background-color: #00bdde;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, transparent 100%);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), inset 0 0 0 rgba(0, 0, 0, 0.13);
+	outline: none;
+	border: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	color: white;
+	font-family: Ubuntu-light;
+	border-radius: 2px;
+}
+
+/* Стили для Application */
+
+.under_features {
+	margin-top: 40px;
+}
+
+.app_block {
+	width: 639px;
+	height: 336px;
+	background-color: white;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+	float: left;
+}
+
+.app-menu ul li {
+	float: left;
+}
+
+.nav-app {
+	background-color: rgba(0, 0, 0, 0.06);
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.04);
+	height: 52px;
+}
+
+.app-menu ul {
+	background-color: white;
+	box-shadow: 1px 0 0 rgba(0, 0, 0, 0.08);
+	margin: 0;
+	padding-left: 0;	
+}
+
+.app-menu li {
+  display: inline-block;
+  width: 100px;
+	height: 52px;
+	text-align: center;
+}
+
+.app-menu li a {
+  color: #202020;
+  font-size: 15px;
+  font-family: "Ubuntu-Medium";
+}
+
+.app-menu li:hover {
+  background-color: rgba(0, 172, 204, 0.17); /* Цвет фона под ссылкой */ 
+  box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03); 
+} 
+
+.wite_bg {
+	border: none;
+	background-color: white;
+	box-shadow: 1px 0 0 rgba(0, 0, 0, 0.08);
+}
+
+.latest_f .app-bl p {
+	width: 350px;
+}
+
+/* Стили для About Us */
+
+.about_us {
+	width: 300px;
+	height: 336px;
+	background-color: white;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+	float: right; 
+	margin-right: 20px;
+	text-align: justify;
+}
+
+.about_top {
+	width: 230px;
+	padding-top: 25px;
+	margin: 0 20px;
+}
+
+.ph_gr {
+	float: left;
+	width: 181px;
+	height: 200px;
+	margin: 0 20px;
+}
+
+.ph-green {
+	padding: 30px;
+  text-align: justify;
+}
+
+.app-bl h3 {
+	margin: 0;
+}
+
+.dimond_t {
+	width: 215px;
+	margin: 0 auto;
+}
+
+/* Стили для contacts */
+
+.under_features {
+	background: url(images/city_bg.png)  no-repeat bottom;
+}
+
+.contacts_form {
+	width: 100%;
+	height: 260px;
+	background-image: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.5) 100%);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 0 0 rgba(0, 0, 0, 0.04);
+	margin-top: 60px;
+}
+
+/* Стили для contacts-form */
+
+.contacts {
+	width: 450px;
+	height: 114px;
+	font-family: Ubuntu;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 24px;
+	float: left;
+	margin: 40px 0 0;
+	cursor: pointer;
+}
+
+.mail img, .phone_foot img, .location img {
+	float: left;
+	margin: 9px 20px;
+}
+
+.phone_foot img, .location img {
+	margin: 4px 20px;
+}
+
+._blue {
+	color: #4ca7c9;
+	text-decoration: underline;	
+}
+
+._number, ._adress{
+	color: #444;
+}
+
+.form_cont {
+	float: right;
+	width: 300px;
+	margin: 0 20px;
+}
+
+.text {
+	width: 280px;
+	height: 34px;
+	background-color: white;
+	border: 1px solid gainsboro;
+	margin: 20px 0 10px;
+	padding-left: 20px;
+	font-family: Ubuntu;
+	font-size: 13px;
+	line-height: 21px;
+	color: #8c8c8c;
+}
+
+textarea {
+	width: 278px;
+	max-width: 278px;
+  max-height: 110px;
+	height: 110px;
+	background-color: white;
+	border: 1px solid gainsboro;
+	padding-left: 20px;
+	color: #8c8c8c;
+	font-family: Ubuntu;
+	font-size: 13px;
+	line-height: 21px;
+	outline: none;
+	margin-bottom: 20px;
+}
+
+.m_detail .send {
+	width: 104px;
+	height: 34px;
+}
+
+.btnsend{
+	width: 104px;
+	height: 34px;
+} 
+
+/* Стили для футера */
+
+.footer {
+  height: 77px;
+  line-height: 45px;
+}
+
+.theme {
+	float: left;
+}
+
+.main_foot ul {
+	padding: 0 0 0 60px;
+}
+
+.main_foot li a {
+	border-left: 1px solid #d7d7d7;
+  padding-left: 20px;
+}
+
+.main_foot li:nth-child(1) a {
+	border-left: none;
+}
+
+.main_foot li a:hover {
+	color: #65bbdb;
+	text-decoration: underline;
+} 
+
+.main_foot li:hover {
+  background: none;  
+  box-shadow: none; 
+} 
+
+.soc_icons {
+	float: right;
+	margin-top: 5px;
+}
+
+.social-list {
+	margin-right: 75px;
+}
+
+.social-list li {
+	float: left;
+	margin:0 0 0 20px;
+}
+
+.social-list li a:hover img {
+	opacity: 0.8;
+}
+
+.f_top img {
+	margin-left: 35px;
+}
