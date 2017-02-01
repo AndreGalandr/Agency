@@ -1,0 +1,186 @@
+  @font-face {
+  	font-family: Ubuntu; /* Имя шрифта */
+  	src: url(fonts/Ubuntu-Light.ttf);
+  	src: url(fonts/Ubuntu-Medium.ttf);
+  	src: url(fonts/Ubuntu-Regular.ttf); /*Путь к файлу со шрифтом */
+  }
+
+  html,
+  body {
+  	margin: 0;
+  	padding: 0;
+  	background-color: #f5f5f5;
+  	width: 100%;
+  	font-family: Ubuntu;
+  }
+
+  .clearfix:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+
+  ul {
+  	list-style: none;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+  	text-decoration: none;
+  }
+
+  .active {
+  	/* Style for "active shape" */
+  	width: 99px;
+  	height: 77px;
+  	background-color: rgba(255, 255, 255, 0.5);
+// background-image: linear-gradient(to top, #f2f2f2 0%, white 100%);
+background-image: linear-gradient(to bottom, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+box-shadow: 0 2px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+border: 0.5px;
+}
+
+.drops {
+	width: 85px;
+	height: 77px;
+	background-color: rgba(0, 172, 204, 0.17);
+	box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03);		
+}
+
+/* Styles for header */
+.bg_bar {
+	position: relative;
+	z-index: 5;
+	background-color: #fcfcfc;
+	background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.16);
+	height: 77px;
+}
+
+.logo {
+	position: absolute;
+	// top: 10px;
+	// left: 18px;
+	margin: 15px 0 0 115px;
+	// float: left;
+	// line-height: 77px;	
+}
+
+.magnifier {
+	float: right;
+	margin: 20px 120px 0 0;
+	width: 175px;
+	height: 34px;
+	background-color: white;
+	background-image: linear-gradient(to top, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.04);
+}
+
+.mag_f {
+	background-image: url(images/search_top.png);   
+	background-repeat: no-repeat; /*Убираем повтор изображения*/   
+	background-position: 142px; /*Позиционируем*/   
+    // border: none; /*убираем стандартную обводку браузера*/   
+    /*-moz-border-radius: 5px; закругляем углы для Mozilla*/  
+    /*-webkit-border-radius: 5px; закругляем углы для Chrome, Safari*/   
+    /*border-radius: 5px; закругляем углы для остальных браузеров*/  
+    padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+    height: 34px; /*высота строки ввода*/   
+    font-size: 13px; /*размер шрифта*/
+    border: 1px solid #cfcfcf;
+  }
+// .magnifier {
+// 	width: 11px;
+// 	height: 11px;
+// // background-color: white;
+// // box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);	
+// // height: 34px;
+// // border: none;
+// position: relative;
+// }
+
+.search {
+	position: absolute;	
+}
+
+.main-menu ul{
+	margin: 0 0 0 280px;
+	padding: 0 0 0 100px;
+	list-style: none;
+	float: left;
+	text-align: center;
+}
+
+.main-menu li {
+	display: inline-block;
+	margin-right: 1em;
+	// line-height: 77px;
+}
+
+.main-menu li a {
+	color: #202020;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.menu-span {
+	color: #444;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 18px;
+}
+
+/* Styles for section slider */
+// .blog {
+// 	width: 1440px;
+// 	height: 3010px;
+// 	background-color: #f5f5f5;
+// }
+
+.slider {
+	background: url(images/city_bg.png)  no-repeat 50% 0;
+}
+
+.slids {
+	width: 980px;
+	height: 500px;
+	background-color: rgba(0, 172, 204, 0.53);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, transparent 100%);
+	box-shadow: 0 1px 0 white, inset 0 4px 0 rgba(0, 0, 0, 0.08), inset 0 0 0 rgba(0, 0, 0, 0.08);
+	margin: 20px auto;
+}
+
+.m_detail {
+	width: 180px;
+	background-color: #00accc;
+	border-radius: 3px;
+	border: none;
+	outline-style: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 48px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0 rgba(0, 0, 0, 0.13);
+	margin: 0 20px;
+	padding: 0px 0px 0px 20px;
+	text-align: center;
+}
+
+.m_details {
+	padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+	height: 34px; /*высота строки ввода*/   
+	font-size: 13px; /*размер шрифта*/
+    // border: 1px solid #cfcfcf;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.06), inset 1px 0 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .m_arrow {
+  	float: right;
+  	padding-left: 20px;
+  }

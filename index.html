@@ -6,7 +6,7 @@
   <link href="dimond.ico" rel="shortcut icon" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css"></head>
 <body>
-<a class="tmpl" href="contact.html" target="_blank">Template</a>
+<a class="tmpl" href="template.html" target="_blank">Template</a>
   <header class="bg_bar clearfix">
     <div class="mid">
       <div id="on_top" class="logo">
@@ -14,13 +14,13 @@
       </div>
       <nav class="main-menu">
         <ul>
-          <li class="active">
-            <p><a href="#">Home<br/><span class="menu-span">Welcome</span></a></p> 
+          <li class=""> <!-- act_ive по необходимости согласно шаблону-->
+           <a href="#">Home<br/><span class="menu-span">Welcome</span></a> 
           </li>      
           <li>
-            <p><a href="#news">News<br/><span class="menu-span">From Blog</span></a></p>  
+           <a href="#news">News<br/><span class="menu-span">From Blog</span></a>  
           </li> 
-          <li class=""><p><a href="#feature">Features<br/><span class="menu-span">Menu style</span></a></p> <!-- drops -->
+          <li class=""><a href="#feature">Features<br/><span class="menu-span">Menu style</span></a> <!-- drops -->
       <!--  <ul>        
               <li>Image Gallery</li>    
               <li>Portfolio</li>  
@@ -28,11 +28,11 @@
             </ul>   -->    
           </li> 
           <li>
-            <p><a href="#apps">Applications<br/><span class="menu-span">Our Services</span></a></p>  
+           <a href="#apps">Applications<br/><span class="menu-span">Our Services</span></a>  
           </li>
               
           <li>
-            <p><a href="#contact">Contact<br/><span class="menu-span">Get in Touch</span></a></p>  
+           <a href="#contact">Contact<br/><span class="menu-span">Get in Touch</span></a>  
           </li>      
         </ul>     
       </nav>
@@ -46,17 +46,26 @@
   <section class="slider">
     <div class="mid">
       <div class="slids">
-        <div class="love">
-          <img src="images/ruller.png" alt="" title="">
+        <!-- <div class="love"> -->
+        <ul id="slides">
+  <li class="slide showing"></li> <!-- Applications -->
+  <li class="slide"></li> <!-- News -->
+  <li class="slide"></li> <!-- Features -->
+  <li class="slide"></li> <!-- AboutUs -->
+  <li class="slide"></li> <!-- Contact Us -->
+
+</ul>
+<button class="controls" id="pause">Pause</button>
+         <!--  <img src="images/ruller.png" alt="" title="">
           <h1>Agency Subtle Theme</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nisi perspiciatis id suscipit cum, labore facilis itaque sed iusto porro! Incidunt debitis maiores laborum, eos inventore ducimus odit, doloribus quis!
           </p>  
           <button class="m_detail">
             <img class="m_arrow" src="images/view-all.png" alt="" style="vertical-align:middle">More Details
-          </button>
+          </button> -->
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <section class="blog">
@@ -130,32 +139,88 @@
       <div class="app clearfix">
         <div  class="app_block">
           <div class="nav-app">
-            <nav  id="apps" class="app-menu clearfix">
+            <nav  id="apps" class="app-menu under-menu clearfix">
               <ul>
                 <li class="wite_bg active">
-                  <p><a href="#">Aplication</a></p>
+                  <p><!--<a href="#">-->Aplication<!--</a>--></p>
                 </li>
                 <li class="wite_bg">
-                  <p><a href="#">News</a></p>  
+                  <p><!--<a href="#">-->News<!--</a>--></p>  
                 </li>    
                 <li class="wite_bg"> <!-- drops  -->
-                  <p><a href="#">Contact Us</a></p>
+                  <p><!--<a href="#">-->Features<!--</a>--></p>
                 </li>
                 <li class="wite_bg">
-                  <p><a href="#">Blog</a></p>
+                  <p><!--<a href="#">-->Contact Us<!--</a>--></p>
                 </li>  
               </ul>
             </nav>
           </div>
-          <div class="ph-green">
-            <div class="ph_gr latest_img">
-              <img src="images/green_phone.png" alt="" title="">
+          <div class="content active">
+            <div class="ph-green">
+              <div class="ph_gr latest_img">
+                <img src="images/green_phone.png" alt="" title="">
+              </div>
+              <div class="latest_f app-bl">
+                <h3>Application</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <p><button type="submit" class="read_m">Read more</button></p>
+              </div>
             </div>
-            <div class="latest_f app-bl">
-              <h3>Application</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-              <p><button type="submit" class="read_m">Read more</button></p>
+          </div>
+           <div class="content">
+            <div class="ph-green">
+              <div class="ph_gr latest_img">
+                <img src="images/news.gif" alt="" title="">
+              </div>
+              <div class="latest_f app-bl">
+                <h3>News</h3>
+                <p>Totam rem aperiamSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                <p><button type="submit" class="read_m">Read more</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="ph-green">
+              <div class="ph_gr latest_img">
+                <img src="images/features.jpg" alt="" title="">
+              </div>
+              <div class="latest_f app-bl">
+                <h3>Features</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <p><button type="submit" class="read_m">Read more</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="ph-green">
+            <!--  <div id="contact" class="logo_foot">
+              <img src="images/logo_foot.png" alt="logo" title="">
+            </div> -->
+              <div class="ph_gr latest_img">
+                <img src="images/ContactUs.png" alt="" title="">
+              </div>
+             <!--  <div class="latest_f app-bl">
+                <h3>Contacts</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <p><button type="submit" class="read_m">Read more</button></p>
+              </div> -->
+              <div class="mail">
+              <img src="images/mail.png" alt="">
+              <p><a href="mailto:companyname@mail.com"><span class="_blue">companyname@mail.com</span></a></p>
+            </div>
+            <div class="phone_foot">
+              <img src="images/tube.png" alt="">
+              <p><a href="tel:+ 123 456 7894 00"><span class="_number">+ 123 456 7894 00</span></a></p>
+            </div>
+            <div class="location">
+              <img src="images/drop.png" alt="">
+              <p><a href="#"><span class="_adress">123 STREET NAME SEATTLE, WA 1234, USA</span></a></p>
+            </div>
             </div>
           </div>
         </div>
@@ -187,11 +252,11 @@
             </div>
             <div class="mail">
               <img src="images/mail.png" alt="">
-              <p><a href="#"><span class="_blue">companyname@mail.com</span></a></p>
+              <p><a href="mailto:companyname@mail.com"><span class="_blue">companyname@mail.com</span></a></p>
             </div>
             <div class="phone_foot">
               <img src="images/tube.png" alt="">
-              <p><a href="#"><span class="_number">+ 123 456 7894 00</span></a></p>
+              <p><a href="tel:+ 123 456 7894 00"><span class="_number">+ 123 456 7894 00</span></a></p>
             </div>
             <div class="location">
               <img src="images/drop.png" alt="">
@@ -220,16 +285,16 @@
         <nav class="main-menu main_foot">
           <ul>
             <li>
-              <p><a href="#">Home</a></p> 
+             <a href="#">Home</a> 
             </li>  
             <li>    
-              <p><a href="#apps">App</a></p>      
+             <a href="#apps">App</a>      
             </li>    
             <li class="">  
-              <p><a href="#feature">Feature</a></p> 
+             <a href="#feature">Feature</a> 
             </li>
             <li>  
-              <p><a href="#news">News</a></p> 
+             <a href="#news">News</a> 
             </li>       
           </ul>      
         </nav>    
@@ -248,6 +313,8 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
   <script type="text/javascript">
     window.onload = function() {
