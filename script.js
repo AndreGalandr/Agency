@@ -11,14 +11,14 @@ var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide,5000);
 
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
 function nextSlide(){
 	slides[currentSlide].className = 'slide';
 	currentSlide = (currentSlide+1)%slides.length;
 	slides[currentSlide].className = 'slide showing';
 }
-
-var playing = true;
-var pauseButton = document.getElementById('pause');
 
 function pauseSlideshow(){
 	pauseButton.innerHTML = 'Play';
