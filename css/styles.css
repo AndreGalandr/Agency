@@ -1,42 +1,42 @@
 @font-face {
-  font-family: "Ubuntu-Light"; /* Имя шрифта */
-  src: url(fonts/Ubuntu-Light.ttf);
+	font-family: "Ubuntu-Light";
+	src: url(../fonts/Ubuntu-Light.ttf);
 }
 
 @font-face {
-  font-family: "Ubuntu"; /* Имя шрифта */
-  src: url(fonts/Ubuntu-Regular.ttf); /*Путь к файлу со шрифтом */
+	font-family: "Ubuntu";
+	src: url(../fonts/Ubuntu-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Ubuntu-Medium"; /* Имя шрифта */
-  src: url(fonts/Ubuntu-Medium.ttf);
+	font-family: "Ubuntu-Medium";
+	src: url(../fonts/Ubuntu-Medium.ttf);
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  font-family: Ubuntu;
-  font-size: 14px;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	font-family: Ubuntu;
+	font-size: 14px;
 }
 
-/* Общие стили */
+/* general styles */
 
 .mid {
-  width: 980px;
-  margin: 0 auto;  
+	width: 980px;
+	margin: 0 auto;  
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 h2 {
@@ -53,11 +53,11 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 input:focus {
-  outline: none;
+	outline: none;
 }
 
 button:hover {
@@ -69,6 +69,7 @@ button:hover {
 .bt_c {
 	text-align: center;	
 }
+
 .tmpl {
 	position: absolute;
 	top: 50px;
@@ -80,26 +81,26 @@ button:hover {
 	color: #00A3C9;
 	text-decoration: underline;
 }
-/* Styles for header */
+
+/* header styles */
 
 .bg_bar {
-  background-color: #fcfcfc;
-  background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.16);
-  /* height: 77px; */
+	background-color: #fcfcfc;
+	background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.16);
 }
 
 .logo {
-  padding-top: 15px;
-  float: left;
-  cursor: pointer;
+	padding-top: 15px;
+	float: left;
+	cursor: pointer;
 }
 
-.main-menu ul{
-  float: left;
-  text-align: center;
-  padding-left: 5%;
-  margin: 0;
+.main-menu ul {
+	float: left;
+	text-align: center;
+	padding-left: 5%;
+	margin: 0;
 }
 
 .main-menu li {
@@ -109,109 +110,108 @@ button:hover {
 }
 
 .main-menu li a {
-  color: #202020;
-  font-size: 15px;
-  font-family: "Ubuntu-Medium";
-  display: block;
-  width: 100%;
-  height: 70%;
-  padding-top: 20px;
-  /* height: 100%; */
+	color: #202020;
+	font-size: 15px;
+	font-family: "Ubuntu-Medium";
+	display: block;
+	width: 100%;
+	height: 70%;
+	padding-top: 20px;
 }
 
 .main-menu li:hover {
-  background-color: rgba(0, 172, 204, 0.17); /* Цвет фона под ссылкой */ 
-  box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03); 
+	background-color: rgba(0, 172, 204, 0.17);  
+	box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03); 
 } 
 
 .menu-span {
-  color: #444;
-  font-size: 12px;
-  font-family: "Ubuntu-Light";
-  line-height: 18px;
+	color: #444;
+	font-size: 12px;
+	font-family: "Ubuntu-Light";
+	line-height: 18px;
 }
 
 .act_ive {
-  width: 99px;
-  height: 77px;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-image: linear-gradient(to bottom, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
-  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
-  border: 0.5px;
+	width: 99px;
+	height: 77px;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: linear-gradient(to bottom, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+	box-shadow: 0 2px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+	border: 0.5px;
 }
 
 .drops {
-  width: 85px;
-  height: 77px;
-  background-color: rgba(0, 172, 204, 0.17);
-  box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03);   
+	width: 85px;
+	height: 77px;
+	background-color: rgba(0, 172, 204, 0.17);
+	box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03);   
 }
 
 .magnifier {
-  float: right;
-  margin-top: 20px;
-  background-color: white;
-  background-image: linear-gradient(to top, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
-  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.04);
+	float: right;
+	margin-top: 20px;
+	background-color: white;
+	background-image: linear-gradient(to top, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.04);
 }
 
 .mag_f {
-  padding-left: 20px; 
-  height: 34px; 
-  font-size: 13px; 
-  border: 1px solid #cfcfcf;
+	padding-left: 20px; 
+	height: 34px; 
+	font-size: 13px; 
+	border: 1px solid #cfcfcf;
 }
 
 .mag_i {
-  float: right;
+	float: right;
 }
 
-/* Стили для слайдера */
+/* slider styles */
 
 .slider {
- background: url(images/city_bg.png)  no-repeat 50% 0;
+	background: url(images/city_bg.png)  no-repeat 50% 0;
 }
 
 .slids {
- width: 980px;
- height: 500px;
- background-color: rgba(0, 172, 204, 0.53);
- background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, transparent 100%);
- box-shadow: 0 1px 0 white, inset 0 4px 0 rgba(0, 0, 0, 0.08), inset 0 0 0 rgba(0, 0, 0, 0.08);
- margin: 20px auto;
- text-align: center;
+	width: 980px;
+	height: 500px;
+	background-color: rgba(0, 172, 204, 0.53);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, transparent 100%);
+	box-shadow: 0 1px 0 white, inset 0 4px 0 rgba(0, 0, 0, 0.08), inset 0 0 0 rgba(0, 0, 0, 0.08);
+	margin: 20px auto;
+	text-align: center;
 }
 
 .love {
 	width: 650px;
-  margin: 0 auto;
-  padding-top: 65px;
+	margin: 0 auto;
+	padding-top: 65px;
 }
 
 .m_detail {
- width: 180px;
- background-color: #00accc;
- border-radius: 3px;
- border: none;
- outline: none;
- text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
- color: white;
- font-size: 16px;
- font-weight: 500;
- line-height: 48px;
- box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0 rgba(0, 0, 0, 0.13);
- padding: 0px 0px 0px 20px;
+	width: 180px;
+	background-color: #00accc;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 48px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0 rgba(0, 0, 0, 0.13);
+	padding: 0px 0px 0px 20px;
 }
 
 .m_details {
- padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
- height: 34px; /*высота строки ввода*/   
- font-size: 13px; /*размер шрифта*/
- border: 1px solid #cfcfcf;
- width: 48px;
- height: 48px;
- background-color: rgba(0, 0, 0, 0.25);
- box-shadow: -1px 0 0 rgba(255, 255, 255, 0.06), inset 1px 0 0 rgba(0, 0, 0, 0.08);
+	padding-left: 20px;
+	height: 34px;
+	font-size: 13px;
+	border: 1px solid #cfcfcf;
+	width: 48px;
+	height: 48px;
+	background-color: rgba(0, 0, 0, 0.25);
+	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.06), inset 1px 0 0 rgba(0, 0, 0, 0.08);
 }
 
 .m_arrow {
@@ -224,16 +224,17 @@ button:hover {
 essential styles:
 these make the slideshow work
 */
-#slides{
+
+#slides {
 	position: relative;
 	width: 980px;
- 	height: 500px;
+	height: 500px;
 	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
 }
 
-.slide{
+.slide {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -248,7 +249,7 @@ these make the slideshow work
 	transition: opacity 1s;
 }
 
-.showing{
+.showing {
 	opacity: 1;
 	z-index: 2;
 }
@@ -258,7 +259,7 @@ non-essential styles:
 just for appearance; change whatever you want
 */
 
-.slide{
+.slide {
 	font-size: 40px;
 	padding: 40px;
 	box-sizing: border-box;
@@ -266,31 +267,35 @@ just for appearance; change whatever you want
 	color: #fff;
 }
 
-.slide:nth-of-type(1){
-	background: url(images/slide1.png)  no-repeat 50% 0;
+.slide:nth-of-type(1) {
+	background: url(../images/slide1.png)  no-repeat 50% 0;
 }
-.slide:nth-of-type(2){
-	background: url(images/slide2.png)  no-repeat 50% 0;
+
+.slide:nth-of-type(2) {
+	background: url(../images/slide2.png)  no-repeat 50% 0;
 }
-.slide:nth-of-type(3){
-	background: url(images/slide3.png)  no-repeat 50% 0;
+
+.slide:nth-of-type(3) {
+	background: url(../images/slide3.png)  no-repeat 50% 0;
 }
-.slide:nth-of-type(4){
-	background: url(images/slide4.png)  no-repeat 50% 0;
+
+.slide:nth-of-type(4) {
+	background: url(../images/slide4.png)  no-repeat 50% 0;
 }
-.slide:nth-of-type(5){
-	background: url(images/slide5.png)  no-repeat 50% 0;
+
+.slide:nth-of-type(5) {
+	background: url(../images/slide5.png)  no-repeat 50% 0;
 }
 
 .controls {
-  outline: none;
-  border: none;
-  margin-top: 5px;
-  border-radius: 3px;
-  padding: 5px 10px;
+	outline: none;
+	border: none;
+	margin-top: 5px;
+	border-radius: 3px;
+	padding: 5px 10px;
 }
 
-/* Стили для Latest News from Blog */
+/* latest news styles */
 
 .blog {
 	padding-bottom: 10px;	
@@ -298,9 +303,8 @@ just for appearance; change whatever you want
 
 .phone {
 	width: 300px;
-	/* height: 336px; */
 	padding-bottom: 15px;
-	background-color: white;
+	background-color: #fff;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 	float: left;
 	text-align: center;
@@ -315,8 +319,7 @@ just for appearance; change whatever you want
 	margin-top: 15px;	
 }
 
-.phone p, .latest_f p{
-	/* padding: 5px; */
+.phone p, .latest_f p {
 	color: #8c8c8c;
 	font-size: 14px;
 	font-weight: 400;
@@ -331,15 +334,14 @@ just for appearance; change whatever you want
 	margin-right: 0;
 }
 
-/* Стили для Latest Features */
+/* latest features styles */
 
 .feat_l {
 	padding: 20px 0 0;	
 }
 
 .features {
-	/* height: 336px; */
-	background-color: white;
+	background-color: #fff;
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 0 0 rgba(0, 0, 0, 0.04);
 }
 
@@ -356,7 +358,7 @@ just for appearance; change whatever you want
 	color: rgba(0, 0, 0, 0.1);
 }
 
-.latest_f .latest_img{
+.latest_f .latest_img {
 	float: left;
 	height: 200px;
 	width: 60px;
@@ -381,7 +383,7 @@ just for appearance; change whatever you want
 	border-radius: 2px;
 }
 
-/* Стили для Application */
+/* application styles */
 
 .under_features {
 	margin-top: 40px;
@@ -389,8 +391,7 @@ just for appearance; change whatever you want
 
 .app_block {
 	width: 639px;
-	/* height: 336px; */
-	background-color: white;
+	background-color: #fff;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 	float: left;
 }
@@ -406,61 +407,53 @@ just for appearance; change whatever you want
 }
 
 .app-menu ul {
-	background-color: white;
+	background-color: #fff;
 	box-shadow: 1px 0 0 rgba(0, 0, 0, 0.08);
 	margin: 0;
 	padding-left: 0;	
 }
 
 .app-menu li {
-  display: inline-block;
-  width: 100px;
+	display: inline-block;
+	width: 100px;
 	height: 52px;
 	text-align: center;
 }
 
 .app-menu li a {
-  color: #202020;
-  font-size: 15px;
-  font-family: "Ubuntu-Medium";
+	color: #202020;
+	font-size: 15px;
+	font-family: "Ubuntu-Medium";
 }
 
 .app-menu li:hover {
-  background-color: rgba(0, 172, 204, 0.17); /* Цвет фона под ссылкой */ 
-  box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03); 
+	background-color: rgba(0, 172, 204, 0.17);
+	box-shadow: inset 0 3px 0 #67bddd, inset 0 0 0 rgba(0, 0, 0, 0.03); 
 } 
-/* .under-menu li:hover {
-	background: none;
-  box-shadow: none;
-} */
+
 .wite_bg {
 	cursor: pointer;
 }
+
 .under-menu li {
 	border-right: 1px solid #f0f0f0;
 }
+
 .under-menu li:hover, .wite_bg.active {
 	border-right: 1px solid #f0f0f0;
-	background-color: white;
+	background-color: #fff;
 	box-shadow: 1px 0 0 rgba(0, 0, 0, 0.08);
 }
 
-.latest_f.app-bl p {
-	/* width: 300px; */
-	/* height: 0; */
-}
-
 .about_us .latest_f.app-bl {
-	/* height: 0; */
 	margin-bottom: 10px;
 }
 
-/* Стили для About Us */
+/* about us styles  */
 
 .about_us {
 	width: 300px;
-	/* height: 336px; */
-	background-color: white;
+	background-color: #fff;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 	float: right; 
 	margin-right: 20px;
@@ -482,7 +475,7 @@ just for appearance; change whatever you want
 
 .ph-green {
 	padding: 30px;
-  text-align: justify;
+	text-align: justify;
 }
 
 .app-bl h3 {
@@ -494,7 +487,7 @@ just for appearance; change whatever you want
 	margin: 0 auto;
 }
 
-/* Стили для contacts */
+/* contacts styles */
 
 .under_features {
 	background: url(images/city_bg.png)  no-repeat bottom;
@@ -503,12 +496,12 @@ just for appearance; change whatever you want
 .contacts_form {
 	width: 100%;
 	height: 260px;
-	background-image: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.5) 100%);
+	background-image: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 0 0 rgba(0, 0, 0, 0.04);
 	margin-top: 60px;
 }
 
-/* Стили для contacts-form */
+/* contacts-form styles */
 
 .contacts {
 	width: 450px;
@@ -549,7 +542,7 @@ just for appearance; change whatever you want
 .text {
 	width: 280px;
 	height: 34px;
-	background-color: white;
+	background-color: #fff;
 	border: 1px solid gainsboro;
 	margin: 20px 0 10px;
 	padding-left: 20px;
@@ -562,9 +555,9 @@ just for appearance; change whatever you want
 textarea {
 	width: 278px;
 	max-width: 278px;
-  max-height: 110px;
+	max-height: 110px;
 	height: 110px;
-	background-color: white;
+	background-color: #fff;
 	border: 1px solid gainsboro;
 	padding-left: 20px;
 	color: #8c8c8c;
@@ -585,7 +578,8 @@ textarea {
 	height: 34px;
 } 
 
-/* Стили для nav with jQuery */
+/* nav with jQuery styles */
+
 .content {
 	display: none;
 }	
@@ -593,11 +587,11 @@ textarea {
 	display: block;
 }
 
-/* Стили для футера */
+/* footer styles */
 
 .footer {
-  height: 77px;
-  line-height: 45px;
+	height: 77px;
+	line-height: 45px;
 }
 
 .theme {
@@ -610,9 +604,8 @@ textarea {
 
 .main_foot li a {
 	border-left: 1px solid #d7d7d7;
-  /* padding-left: 20px; */
-  margin-top: 20px;
-  padding-left: 0;
+	margin-top: 20px;
+	padding-left: 0;
 	padding-top: 0;
 	height: none;
 	height: 45px;
@@ -628,8 +621,8 @@ textarea {
 } 
 
 .main_foot li:hover {
-  background: none;  
-  box-shadow: none; 
+	background: none;  
+	box-shadow: none; 
 } 
 
 .soc_icons {
