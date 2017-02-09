@@ -4,249 +4,178 @@
   <meta charset="UTF-8">
   <title>Agency</title>
   <link href="dimond.ico" rel="shortcut icon" type="image/x-icon" />
-  <link rel="stylesheet" href="css/styles.css"></head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
-<a class="tmpl" href="template.html" target="_blank">PSD template</a>
-  <header class="bg_bar clearfix">
-    <div class="mid">
-      <div id="on_top" class="logo">
-        <a href="#contact"><img src="images/logo_top.png" alt="logo" title="Logo"></a>
+    <a class="tmpl" href="template.html" target="_blank">PSD template</a>
+<header class="bg_bar clearfix">
+  <div class="mid">
+    <div id="on_top" class="logo">
+      <a href="#contact"><img src="images/logo_top.png" alt="logo" title="Logo"></a>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li class=""> <!-- act_ive according with PSD -->
+          <a href="#">Home<br/><span class="menu-span">Welcome</span></a> 
+        </li>      
+        <li>
+          <a href="#news">News<br/><span class="menu-span">From Blog</span></a>  
+        </li> 
+        <li class="">
+          <a href="#feature">Features<br/><span class="menu-span">Menu style</span></a> 
+        </li> 
+        <li>
+          <a href="#apps">Applications<br/><span class="menu-span">Our Services</span></a>  
+        </li>
+        <li>
+          <a href="#contact">Contact<br/><span class="menu-span">Get in Touch</span></a>  
+        </li>      
+      </ul>     
+    </nav>
+    <div class="magnifier">
+      <input class="mag_f" type="search" name="q" placeholder="Search">
+      <input class="mag_i" type="image" name="image" src="images/search_top.png" width="34" height="34">
+    </div>
+  </div>
+</header>
+
+<section class="slider">
+  <div class="mid">
+    <div class="slids">
+      <ul id="slides">
+        <li class="slide showing"></li> <!-- Applications -->
+        <li class="slide"></li> <!-- News -->
+        <li class="slide"></li> <!-- Features -->
+        <li class="slide"></li> <!-- AboutUs -->
+        <li class="slide"></li> <!-- Contact Us -->
+      </ul>
+      <button class="controls" id="pause">Pause</button>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <div id="news" class="mid">
+    <h2>Latest News from Blog</h2>
+    <div class="news clearfix">
+      <div class="phone">
+        <img src="images/bl_phone.png" alt="" title="">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates...</p>
       </div>
-      <nav class="main-menu">
-        <ul>
-          <li class=""> <!-- act_ive по необходимости согласно шаблону-->
-           <a href="#">Home<br/><span class="menu-span">Welcome</span></a> 
-          </li>      
-          <li>
-           <a href="#news">News<br/><span class="menu-span">From Blog</span></a>  
-          </li> 
-          <li class=""><a href="#feature">Features<br/><span class="menu-span">Menu style</span></a> <!-- drops -->
-      <!--  <ul>        
-              <li>Image Gallery</li>    
-              <li>Portfolio</li>  
-              <li>Statistics</li>  
-            </ul>   -->    
-          </li> 
-          <li>
-           <a href="#apps">Applications<br/><span class="menu-span">Our Services</span></a>  
-          </li>
-          <li>
-           <a href="#contact">Contact<br/><span class="menu-span">Get in Touch</span></a>  
-          </li>      
-        </ul>     
-      </nav>
-      <div class="magnifier">
-        <input class="mag_f" type="search" name="q" placeholder="Search">
-        <input class="mag_i" type="image" name="image" src="images/search_top.png" width="34" height="34">
+      <div class="phone">
+        <img src="images/w_phone.png" alt="" title="">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates...</p>
+      </div>
+      <div class="phone">
+        <img src="images/bl_phone.png" alt="" title="">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates...</p>
       </div>
     </div>
-  </header>
+    <p class=" bt_c">
+      <button class="m_detail"><img class="m_arrow" src="images/view-all.png" alt="">View All</button>
+    </p>    
+  </div>
+</section>
 
-  <section class="slider">
-    <div class="mid">
-      <div class="slids">
-        <!-- <div class="love"> -->
-        <ul id="slides">
-          <li class="slide showing"></li> <!-- Applications -->
-          <li class="slide"></li> <!-- News -->
-          <li class="slide"></li> <!-- Features -->
-          <li class="slide"></li> <!-- AboutUs -->
-          <li class="slide"></li> <!-- Contact Us -->
-        </ul>
-        <button class="controls" id="pause">Pause</button>
-         <!--  <img src="images/ruller.png" alt="" title="">
-          <h1>Agency Subtle Theme</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nisi perspiciatis id suscipit cum, labore facilis itaque sed iusto porro! Incidunt debitis maiores laborum, eos inventore ducimus odit, doloribus quis!
-          </p>  
-          <button class="m_detail">
-            <img class="m_arrow" src="images/view-all.png" alt="" style="vertical-align:middle">More Details
-          </button> -->
+<section class="features clearfix">
+  <div id="feature" class="mid">
+    <h2>Latest Features</h2>
+    <div class="feat_l clearfix">
+      <div class="latest_f border">
+        <div class="latest_img">
+          <img src="images/search_mid.png" alt="" title="">
+        </div>
+        <div class="latest_p">
+          <h3>Lorem Ipsum</h3>
+          <p>Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+          <p><button class="read_m">Read more</button></p>
         </div>
       </div>
-    <!-- </div> -->
-  </section>
-
-  <section class="blog">
-    <div id="news" class="mid">
-      <h2>Latest News from Blog</h2>
-      <div class="news clearfix">
-        <div class="phone">
-          <img src="images/bl_phone.png" alt="" title="">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates...</p>
+      <div class="latest_f border">
+        <div class="latest_img">
+          <img src="images/sint.png" alt="" title="">
         </div>
-        <div class="phone">
-          <img src="images/w_phone.png" alt="" title="">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates...</p>
-        </div>
-        <div class="phone">
-          <img src="images/bl_phone.png" alt="" title="">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates...</p>
+        <div class="latest_p">
+          <h3>Excepteur Sint</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p><button class="read_m">Read more</button></p>
         </div>
       </div>
-      <p class=" bt_c">
-        <button class="m_detail">
-          <img class="m_arrow" src="images/view-all.png" alt="">View All
-        </button>
-      </p>
+      <div class="latest_f">
+        <div class="latest_img">
+          <img src="images/invent.png" alt="" title="">
+        </div>
+        <div class="latest_p">
+          <h3>Inventore Veritatis</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p>
+          <p><button class="read_m">Read more</button></p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div> 
+</section>
 
-  <section class="features clearfix">
-    <div id="feature" class="mid">
-      <h2>Latest Features</h2>
-      <div class="feat_l clearfix">
-        <div class="latest_f border">
-          <div class="latest_img">
-            <img src="images/search_mid.png" alt="" title="">
-          </div>
-          <div class="latest_p">
-            <h3>Lorem Ipsum</h3>
-            <p>Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-            <p><button class="read_m">Read more</button></p>
-          </div>
+<section class="under_features clearfix">
+  <div class="mid">
+    <div class="app clearfix">
+      <div  class="app_block">
+        <div class="nav-app">
+          <nav  id="apps" class="app-menu under-menu clearfix">
+            <ul>
+              <li class="wite_bg active"><p><!--<a href="#">-->Aplication<!--</a>--></p></li>
+              <li class="wite_bg"><p><!--<a href="#">-->News<!--</a>--></p></li>  
+              <li class="wite_bg"> <!-- drops  --><p><!--<a href="#">-->Features<!--</a>--></p></li>
+              <li class="wite_bg"><p><!--<a href="#">-->Contact Us<!--</a>--></p></li>  
+            </ul>
+          </nav>
         </div>
-        <div class="latest_f border">
-          <div class="latest_img">
-            <img src="images/sint.png" alt="" title="">
-          </div>
-          <div class="latest_p">
-            <h3>Excepteur Sint</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-            <p><button class="read_m">Read more</button></p>
-          </div>
-        </div>
-        <div class="latest_f">
-          <div class="latest_img">
-            <img src="images/invent.png" alt="" title="">
-          </div>
-          <div class="latest_p">
-            <h3>Inventore Veritatis</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p>
-            <p><button class="read_m">Read more</button></p>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </section>
-
-  <section class="under_features clearfix">
-    <div  class="mid">
-      <div class="app clearfix">
-        <div  class="app_block">
-          <div class="nav-app">
-            <nav  id="apps" class="app-menu under-menu clearfix">
-              <ul>
-                <li class="wite_bg active">
-                  <p><!--<a href="#">-->Aplication<!--</a>--></p>
-                </li>
-                <li class="wite_bg">
-                  <p><!--<a href="#">-->News<!--</a>--></p>  
-                </li>    
-                <li class="wite_bg"> <!-- drops  -->
-                  <p><!--<a href="#">-->Features<!--</a>--></p>
-                </li>
-                <li class="wite_bg">
-                  <p><!--<a href="#">-->Contact Us<!--</a>--></p>
-                </li>  
-              </ul>
-            </nav>
-          </div>
-          <div class="content active">
-            <div class="ph-green">
-              <div class="ph_gr latest_img">
-                <img src="images/green_phone.png" alt="" title="">
-              </div>
-              <div class="latest_f app-bl">
-                <h3>Application</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                <p><button type="submit" class="read_m">Read more</button></p>
-              </div>
+        <div class="content active">
+          <div class="ph-green">
+            <div class="ph_gr latest_img">
+              <img src="images/green_phone.png" alt="" title="">
             </div>
-          </div>
-           <div class="content">
-            <div class="ph-green">
-              <div class="ph_gr latest_img">
-                <img src="images/news.gif" alt="" title="">
-              </div>
-              <div class="latest_f app-bl">
-                <h3>News</h3>
-                <p>Totam rem aperiamSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                <p><button type="submit" class="read_m">Read more</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="ph-green">
-              <div class="ph_gr latest_img">
-                <img src="images/features.jpg" alt="" title="">
-              </div>
-              <div class="latest_f app-bl">
-                <h3>Features</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                <p><button type="submit" class="read_m">Read more</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="ph-green">
-            <!--  <div id="contact" class="logo_foot">
-              <img src="images/logo_foot.png" alt="logo" title="">
-            </div> -->
-              <div class="ph_gr latest_img">
-                <img src="images/ContactUs.png" alt="" title="">
-              </div>
-             <!--  <div class="latest_f app-bl">
-                <h3>Contacts</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                <p><button type="submit" class="read_m">Read more</button></p>
-              </div> -->
-              <div class="mail">
-              <img src="images/mail.png" alt="">
-              <p><a href="mailto:companyname@mail.com"><span class="_blue">companyname@mail.com</span></a></p>
-            </div>
-            <div class="phone_foot">
-              <img src="images/tube.png" alt="">
-              <p><a href="tel:+ 123 456 7894 00"><span class="_number">+ 123 456 7894 00</span></a></p>
-            </div>
-            <div class="location">
-              <img src="images/drop.png" alt="">
-              <p><a href="#"><span class="_adress">123 STREET NAME SEATTLE, WA 1234, USA</span></a></p>
-            </div>
+            <div class="latest_f app-bl">
+              <h3>Application</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+              <p><button type="submit" class="read_m">Read more</button></p>
             </div>
           </div>
         </div>
-        <div class="about_us">
-          <div class="latest_f app-bl">
-            <div class="about_top">
-              <h3>AboutUs</h3>
-              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+        <div class="content">
+          <div class="ph-green">
+            <div class="ph_gr latest_img">
+              <img src="images/news.gif" alt="" title="">
             </div>
-            <div class="dimond">
-              <div class="ph_gr latest_img inv_dimond">
-              <img src="images/dimond.png" alt="" title="">
-              </div>
-              <div class="dimond_t latest_p">
-                <h4>Inventore Veritatis</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium tore...</p>
-                <p><button class="read_m">Read more</button></p>
-              </div>
-            </div>  
+            <div class="latest_f app-bl">
+              <h3>News</h3>
+              <p>Totam rem aperiamSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+              <p><button type="submit" class="read_m">Read more</button></p>
+            </div>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="contacts_form clearfix">  
-      <div class="mid">
-        <div class="contacts clearfix">
-            <div id="contact" class="logo_foot">
-              <a href="#on_top"><img src="images/logo_foot.png" alt="logo" title=""></a>
+        <div class="content">
+          <div class="ph-green">
+            <div class="ph_gr latest_img">
+              <img src="images/features.jpg" alt="" title="">
+            </div>
+            <div class="latest_f app-bl">
+              <h3>Features</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+              <p><button type="submit" class="read_m">Read more</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="ph-green">
+            <div class="ph_gr latest_img">
+              <img src="images/ContactUs.png" alt="" title="">
             </div>
             <div class="mail">
               <img src="images/mail.png" alt="">
@@ -261,170 +190,115 @@
               <p><a href="#"><span class="_adress">123 STREET NAME SEATTLE, WA 1234, USA</span></a></p>
             </div>
           </div>
-          <form class="form_cont">
-            <div>
-              <input class="text" type="text" name="Name" placeholder="Name">
-            </div>
-            <div class="comment">  
-              <textarea name="comment" placeholder="Message"></textarea>
-            </div>
-            <div class="btnsend">
-              <input type="image" name="image" src="images/send.png">
-            </div> 
-          </form>
-      </div>
-    </div>   
-  </section>
-
-  <footer class="footer">
-    <div class="mid">
-      <!-- <div class="footer_2"> -->
-        <p class="theme">Created by Andre Galandr</p>
-        <nav class="main-menu main_foot">
-          <ul>
-            <li>
-             <a href="#">Home</a> 
-            </li>  
-            <li>    
-             <a href="#apps">App</a>      
-            </li>    
-            <li class="">  
-             <a href="#feature">Feature</a> 
-            </li>
-            <li>  
-             <a href="#news">News</a> 
-            </li>       
-          </ul>      
-        </nav>    
-        <div class="soc_icons">
-          <ul class="social-list">
-            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="images/tweet.png" alt=""></a></li>
-            <li><a href="#"><img src="images/google.png" alt=""></a></li>
-            <li><a href="#"><img src="images/rss.png" alt=""></a></li>
-          </ul>
-          <div class="f_top">
-            <a href="#on_top"><img src="images/on_top.png" alt=""></a>
-          </div>
         </div>
-      <!-- </div> -->
+      </div>
+      <div class="about_us">
+        <div class="latest_f app-bl">
+          <div class="about_top">
+            <h3>AboutUs</h3>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+          </div>
+          <div class="dimond">
+            <div class="ph_gr latest_img inv_dimond">
+              <img src="images/dimond.png" alt="" title="">
+            </div>
+            <div class="dimond_t latest_p">
+              <h4>Inventore Veritatis</h4>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium tore...</p>
+              <p><button class="read_m">Read more</button></p>
+            </div>
+          </div>  
+        </div>
+      </div>
     </div>
-  </footer>
+  </div> 
+  <div class="contacts_form clearfix">  
+    <div class="mid">
+      <div class="contacts clearfix">
+        <div id="contact" class="logo_foot">
+          <a href="#on_top"><img src="images/logo_foot.png" alt="logo" title=""></a>
+        </div>
+        <div class="mail">
+          <img src="images/mail.png" alt="">
+          <p><a href="mailto:companyname@mail.com"><span class="_blue">companyname@mail.com</span></a></p>
+        </div>
+        <div class="phone_foot">
+          <img src="images/tube.png" alt="">
+          <p><a href="tel:+ 123 456 7894 00"><span class="_number">+ 123 456 7894 00</span></a></p>
+        </div>
+        <div class="location">
+          <img src="images/drop.png" alt="">
+          <p><a href="#"><span class="_adress">123 STREET NAME SEATTLE, WA 1234, USA</span></a></p>
+        </div>
+      </div>
+      <form class="form_cont">
+        <div>
+          <input class="text" type="text" name="Name" placeholder="Name">
+        </div>
+        <div class="comment">  
+          <textarea name="comment" placeholder="Message"></textarea>
+        </div>
+        <div class="btnsend">
+          <input type="image" name="image" src="images/send.png">
+        </div> 
+      </form>
+    </div>
+  </div>   
+</section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="script.js"></script>
+<footer class="footer">
+  <div class="mid">
+    <p class="theme">Created by Andre Galandr</p>
+    <nav class="main-menu main_foot">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#apps">App</a></li>
+        <li><a href="#feature">Feature</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </nav>     
+    <div class="soc_icons">
+      <ul class="social-list">
+        <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="images/tweet.png" alt=""></a></li>
+        <li><a href="#"><img src="images/google.png" alt=""></a></li>
+        <li><a href="#"><img src="images/rss.png" alt=""></a></li>
+      </ul>
+      <div class="f_top">
+        <a href="#on_top"><img src="images/on_top.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
-  <script type="text/javascript">
-    window.onload = function() {
-      var el1 = document.getElementsByClassName("cbalink")[0];
-      var el2 = document.getElementsByClassName("cumf_bt_form_wrapper")[0];
-      if (!!el1.parentNode) el1.parentNode.removeChild(el1);
-      if (!!el2.parentNode) el2.parentNode.removeChild(el2);
-    };
-  </script>
+<!-- script for hosting -->
+<script type="text/javascript">
+  window.onload = function() {
+    var el1 = document.getElementsByClassName("cbalink")[0];
+    var el2 = document.getElementsByClassName("cumf_bt_form_wrapper")[0];
+    if (!!el1.parentNode) el1.parentNode.removeChild(el1);
+    if (!!el2.parentNode) el2.parentNode.removeChild(el2);
+  };
+</script>
 </html>
 
-<!-- Дополнительный блок -->
-<!--<div class="latest-by_cat">
-    <div class="latest_features">
-    <h2>Latest Features</h2>
-    <p>by <span>Lohn Doe</span></p>
-    <div>
-    <img src="images/may.png" alt="" title="">
-    </div>
-    <div>
-    <img src="images/orange_phone.png" alt="" title="">
-    <h3><span>1.</span>Lorem ipsum dolor sit amet </h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sunt repellendus voluptatum dolorum corporis aspernatur quos voluptas odio quasi dolorem, cum eum. Temporibus incidunt, aliquam est, officia quas dolores reiciendis.</p>
-    <h3><span>2.</span>Lorem ipsum dolor sit amet</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis totam eaque minima consectetur. Temporibus, obcaecati qui ab impedit veniam ut eius deleniti pariatur, deserunt expedita rerum, eum, rem ea magnam.</p>
-    </div>
-    </div>
-    <aside>
-      <h3>by Category</h3>
-       <img src="images/category.png" alt="" title="">
-       <nav class="category">
-      <ul>
-        <li>
-            <p>
-              <a href="#">
-                All
-              </a>
-            </p>
-          </li>
-        <li>
-            <p>
-              <a href="#">
-                Graphic Design
-              </a>
-            </p>
-          </li>
-        <li class="">
-            <p>
-              <a href="#">
-                User Interface
-              </a>
-            </p>
-          </li>
-        <li>
-            <p>
-              <a href="#">
-                Social media
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#">
-                Technology
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#">
-                Social media
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#">
-                Business
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#">
-                Development
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#">
-                User Experience
-              </a>
-            </p>
-          </li>
-      </ul>
-      </nav>
-    </aside>
-    </div> -->           
-        
-            
-              
-                   
-              
-            
-          
-        
-            
-              
-                     
-              
-            
-          
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
