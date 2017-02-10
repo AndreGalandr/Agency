@@ -14,25 +14,28 @@ var slideInterval = setInterval(nextSlide,5000);
 var playing = true;
 var pauseButton = document.getElementById('pause');
 
-function nextSlide(){
+function nextSlide() {
 	slides[currentSlide].className = 'slide';
 	currentSlide = (currentSlide+1)%slides.length;
 	slides[currentSlide].className = 'slide showing';
 }
 
-function pauseSlideshow(){
+function pauseSlideshow() {
 	pauseButton.innerHTML = 'Play';
 	playing = false;
 	clearInterval(slideInterval);
 }
 
-function playSlideshow(){
+function playSlideshow() {
 	pauseButton.innerHTML = 'Pause';
 	playing = true;
 	slideInterval = setInterval(nextSlide,5000);
 }
 
-pauseButton.onclick = function(){
-	if(playing){ pauseSlideshow(); }
-	else{ playSlideshow(); }
+pauseButton.onclick = function() {
+if (playing) {
+ pauseSlideshow();
+} else { 
+	playSlideshow();
+}
 };
