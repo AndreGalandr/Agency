@@ -169,7 +169,7 @@ button:hover {
 /* slider styles */
 
 .slider {
-	background: url(images/city_bg.png)  no-repeat 50% 0;
+	background: url(../images/city_bg.png)  no-repeat 50% 0;
 }
 
 .slids {
@@ -490,7 +490,7 @@ just for appearance; change whatever you want
 /* contacts styles */
 
 .under_features {
-	background: url(images/city_bg.png)  no-repeat bottom;
+	background: url(../images/city_bg.png)  no-repeat bottom;
 }
 
 .contacts_form {
